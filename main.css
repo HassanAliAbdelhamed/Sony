@@ -6,12 +6,29 @@ html{
     
 }
 
+.headerText{
+ text-align: center;   
+ display: inline-block;
+ position: relative;
+ cursor: pointer;
+ margin: 60px 0;
+}
+.headerText::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    bottom: -5px;
+    background: black;
+}
 /* Start Header  */
 header{
     background-color: white;
     display: flex;
     align-items: center;
     width: 100%;
+
 }
 nav{
     width: 100%;
@@ -102,3 +119,46 @@ main img{
     height: 659px;
 }
 
+section{
+    padding: 60px 0; 
+    background-color:#F6F6F6;
+    overflow: hidden;
+}
+section .container{
+    text-align: center;
+}
+section .container .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .container h4{
+    font-size: 36px;
+}
+section .container h2{
+    font-size: 58px;
+    color: var(--mainColor);
+}
+section .container ul{
+    text-align: start;
+    color: #979797;
+    font-size: 30px;
+}
+
+section .container .row img{
+    position: relative;
+}
+section .container .row .imgContainer{
+    overflow: hidden;
+}
+section .container .row .imgContainer::before{
+    content: '';
+    width: 89%;
+    height: 88%;
+    bottom: 0;
+    right: 57%;
+    position: absolute;
+    background-color: var(--mainColor);
+    z-index: 1;
+}
