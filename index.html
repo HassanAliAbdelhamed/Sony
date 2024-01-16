@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-</head>
+  </head>
 <body>
     <!-- header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#" style="font-size: 26px;">سوني</a>
+              <a class="navbar-brand" href="#" style="font-size: 40px; font-family: monospace;">سوني</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,10 +26,10 @@
                     <a class="nav-link " href="#whatBenefit">ماذا سأستفيد</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">المميزات</a>
+                    <a class="nav-link" href="#productPenefit">المميزات</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">اراء المستخدمين </a>
+                    <a class="nav-link" href="#productComponents">مكونات المنتج</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">الأسئله الشائعه</a>
@@ -41,6 +41,7 @@
           </nav>
     </header>
     <!-- header -->
+
     <!-- main  -->
     <main id="home">
         <div class="container">
@@ -52,7 +53,7 @@
                 </div>
                 <div class="col-12 col-lg-6 " style="position: relative;">
                     <div class="round"></div>
-                    <img src="images/head.png" style="z-index: 2 ; position: relative;" alt="">
+                    <img src="images/head.png" class="wow fadeInDownBig" style="z-index: 2 ; position: relative;" alt="">
                 </div>
             </div>
         </div>
@@ -86,6 +87,122 @@
     </section>
     <!-- Section  -->
 
+    <!-- productPenefit -->
+    <div class="productPenefit" id="productPenefit">
+      <div class="container" style="text-align: center;">
+        <h3 class="headerText">مميزات المنتج</h3>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <img src="images/head2.png" alt="">
+          </div>
+          <div class="col">
+            <div>
+              <div>
+                <h5 class="head">صوت نقي</h5>
+                <h5>تتمتع سماعة سوني بصوت نقية عالية الجودة مُحسنة بتقنيات تكنولوجية دقيقة مع DCEE اكستريم كما تنقل تقنية LDAC بيانات أكثر بمعدل ثلاثة أضعاف تقنية Bluetooth التقليدية لصوت فائق عالي الدقة.</h5>
+              </div>
+              <div>
+                <h5 class="head">تقنية Speak-to-Chat</h5>
+                <h5>عند بدء التحدث ، ستقوم ميزة Speak-to-Chat بإيقاف الصوت مؤقتًا تلقائيًا حتى تتمكن من الدردشة بشكل مريح. وهذه الميزة مفيده إذا كنت لا تريد نزع سماعات الرأس أو كانت يداك مشغولتين. فهي مدعومة بتقنية Precise Voice Pickup ، حيث تستخدم هذه الميزة خمسة ميكروفونات مدمجة في سماعات الرأس وأحدث نظام معالجة صوت يمكنه التعرف على صوتك والاستجابة له. وعند الانتهاء من المحادثة ، سيتم تشغيل الصوت مرة أخرى </h5>
+              </div>
+            </div>
+            <div style="display: none;">
+              <div>
+                <h5 class="head">صوت نقي</h5>
+                <h5>تتمتع سماعة سوني بصوت نقية عالية الجودة مُحسنة بتقنيات تكنولوجية دقيقة مع DCEE اكستريم كما تنقل تقنية LDAC بيانات أكثر بمعدل ثلاثة أضعاف تقنية Bluetooth التقليدية لصوت فائق عالي الدقة.</h5>
+              </div>
+              <div>
+                <h5 class="head">تقنية Speak-to-Chat</h5>
+                <h5>عند بدء التحدث ، ستقوم ميزة Speak-to-Chat بإيقاف الصوت مؤقتًا تلقائيًا حتى تتمكن من الدردشة بشكل مريح. وهذه الميزة مفيده إذا كنت لا تريد نزع سماعات الرأس أو كانت يداك مشغولتين. فهي مدعومة بتقنية Precise Voice Pickup ، حيث تستخدم هذه الميزة خمسة ميكروفونات مدمجة في سماعات الرأس وأحدث نظام معالجة صوت يمكنه التعرف على صوتك والاستجابة له. وعند الانتهاء من المحادثة ، سيتم تشغيل الصوت مرة أخرى </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swapBtns">
+        <button class="previos active"></button>
+        <button class="next"></button>
+      </div>
+    </div>
+    <!-- productPenefit -->
+
+    <!-- productComponents -->
+      <section id="productComponents">
+        <div class="roundProcomps  d-none d-lg-block">
+        </div>
+        <img class="imgRound  d-none d-lg-block wow slideInLeft "  data-wow-duration=".7s"style=" z-index:1 ;" data-wow-offset="10" src="images/2 477.png" alt="">
+        <div class="container productComponents" id="whatBenefit">
+          <h3 class="headerText">مكونات المنتج</h3>
+          <div class="row">
+            <div class="col">
+              <div>
+                <h5 class="head headInprComps">سماعة رأس Sony WH - 1000XM4</h5>
+                <h5 style="color: #979797">كابل تحن بجودة عالية يحافظ عص نقل التحنات الكرربائية لصب ارية بكل سالسة و  أمان.</h5>
+              </div>
+              <div>
+                <h5 class="head headInprComps">كابل شحن USB TypeC</h5>
+                <h5 style="color: #979797">كابل تحن بجودة عالية يحافظ عص نقل التحنات الكرربائية لصب ارية بكل سالسة و  أمان.</h5>
+              </div>
+              <div>
+                <h5 class="head headInprComps">حقيبة حافظة</h5>
+                <h5 style="color: #979797">تتسم حقيبة الحمل المصاحبة باألناقة المتانة والتكل البسي المميز كما وتساعد في حفظ الس ّماعة من الخدوش والسق ات واالرت امات وضرر البصل والماء.</h5>
+              </div>
+              <div>
+                <h5 class="head headInprComps">كابل صوت</h5>
+                <h5 style="color: #979797">كابل يمنحك خيار الإستماع السلكي</h5>
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="round"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h5>ستمع للصوت كما لو أنك في قلب الحدث .. اصنع تجربة
+                استثنائية مع سماعتك
+              </h5>
+              <h5 class="head">Sony WH - 1000XM4</h5>
+              <p style="color: #979797; font-size: 18px;">تمنحك سماعة 1000XM4-WH الثقة بنفسك عند التحكم األمثل بعاداتك ورغباتك الشعور بالقوة عند اإلستماع للصوت النقي دون أي شوائب أو ضوضاء التحلي بالراحة عند اإلستماع  بشكل مستمر دون المباالة نحو نفاد البطارية تمنحك سماعة 1000XM4-WH .. الرفاهية التي تبحث عنها</p>
+              <div style="text-align: center;">
+                <button class=" ">احصل عليها الآن </button>
+              </div>
+            </div>
+            <div class="col wow swing" data-wow-offset="100">
+              <img src="images/head3.png"   alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="list d-none d-lg-block">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">الرئيسيه</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#whatBenefit">ماذا سأستفيد</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productPenefit">المميزات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productComponents">مكونات المنتج</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الأسئله الشائعه</a>
+            </li>
+
+          </ul>
+        </div>
+      </footer>
+      
+    <!-- productComponents -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>

@@ -5,20 +5,24 @@
 html{
     
 }
+img{
+    max-width: 100%;
+}
 
 .headerText{
  text-align: center;   
  display: inline-block;
  position: relative;
  cursor: pointer;
- margin: 60px 0;
+ margin: 5px 0;
+ z-index: 4;
 }
 .headerText::before{
     content: '';
     position: absolute;
     right: 0;
     width: 40%;
-    height: 2px;
+    height: 4px;
     bottom: -5px;
     background: black;
 }
@@ -31,7 +35,11 @@ header{
 
 }
 nav{
-    width: 100%;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 200 !important;
+    background: white !important;
 }
 .navbar-light .navbar-toggler{
     color: var(--mainColor) !important;
@@ -40,6 +48,7 @@ nav{
 .navbar-collapse{
     justify-content: end;
 }
+
 nav li a{
     font-size: 18px;
     font-weight: 700;
@@ -68,6 +77,7 @@ main{
     overflow: hidden;
     position: relative;
     background-color: #F6F6F6;
+    margin: 60px 0 0 0 ;
 }
 main .round{
     width: 862px ;
@@ -120,9 +130,10 @@ main img{
 }
 
 section{
-    padding: 60px 0; 
+    padding: 60px 0 0; 
     background-color:#F6F6F6;
     overflow: hidden;
+    position: relative;
 }
 section .container{
     text-align: center;
@@ -130,20 +141,21 @@ section .container{
 section .container .col{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 }
 section .container h4{
     font-size: 36px;
 }
 section .container h2{
-    font-size: 58px;
+    font-size: 2rem;
     color: var(--mainColor);
+    font-weight: 800;
 }
 section .container ul{
     text-align: start;
     color: #979797;
-    font-size: 30px;
+    font-size: 1.4rem;
 }
 
 section .container .row img{
@@ -161,4 +173,104 @@ section .container .row .imgContainer::before{
     position: absolute;
     background-color: var(--mainColor);
     z-index: 1;
+}
+.productPenefit{
+    padding: 60px 0;
+}
+.productPenefit .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    flex-direction: column;
+    padding: 20px;
+}
+.productPenefit .swapBtns{
+    text-align: center;
+}
+.productPenefit .swapBtns button{
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #9747FF33;
+    margin: 5px;
+}
+.productPenefit .swapBtns .active{
+    background:var(--mainColor)
+}
+
+
+.productComponents{
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+ h5{
+    font-size: 1.3rem;
+    text-align: start;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+ .head {
+    font-size: 1.6rem;
+    padding-top: 5px;
+    color: var(--mainColor);
+    font-weight: 600;
+}
+.col .headInprComps {
+    padding: 15px;
+}
+.roundProcomps{
+    width: 800px;
+    height: 800px;
+    top: -50%;
+    left: -287px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--mainColor);
+    z-index: 1;
+}
+
+.imgRound{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 650px;
+}
+footer button{
+    background-color: var(--mainColor);
+    outline: none;
+    border-color: var(--mainColor);
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 18px 90px 21px 90px;
+    border-radius: 8px;
+    width: 358px;
+    height: 77px;
+}
+footer img{
+height: 100%;
+}
+footer .col-12{
+    padding: 30px;
+}
+footer .list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    background-color: var(--mainColor);
+    color: white !important;
+    padding: 20px 0;
+}
+footer .list ul a{
+    color: white;
+}
+footer .list ul a:hover{
+    color: white;
 }
